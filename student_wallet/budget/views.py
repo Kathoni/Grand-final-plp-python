@@ -1,12 +1,9 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import Category, Transaction
 from .forms import CategoryForm, TransactionForm
 from django.db.models import Sum
-from django.contrib.auth import authenticate, login
 
 
 @login_required
