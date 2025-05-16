@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
