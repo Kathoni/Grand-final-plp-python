@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls', namespace='accounts')),
     path('budget/', include('budget.urls', namespace='budget')),
-    path('', include('budget.urls', namespace='home')),  # Redirect root to budget app
+    path('', include('accounts.urls', namespace='accounts')),  # Redirect root to budget app
 
 ]
