@@ -20,11 +20,11 @@ def login_user(request):
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             login(request, form.get_user())
-            return redirect('budget:home') # Redirect to budget home page
-        else:
-         form = AuthenticationForm()
-    return render(request, 'accounts/login.html', {'form': form})
+            return redirect('budget:home')  # Redirect on successful login
+    else:
+        form = AuthenticationForm()  # <- This was missing if POST fails or for GET
 
+    return render(request, 'accounts/login.html', {'form': form})
 
 def logout_user(request):
     logout(request)

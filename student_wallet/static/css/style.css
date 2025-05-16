@@ -1,10 +1,209 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Responsive Design */
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #007bff !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Container spacing */
+.container {
+    margin-top: 30px;
+    padding: 15px;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+}
+
+/* Headings */
+h2, h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-size: 0.95rem;
+}
+
+thead th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 15px;
+    text-align: left;
+    border-radius: 8px 8px 0 0;
+}
+
+tbody tr {
+    background: #f9fbfd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+tbody tr:hover {
+    background-color: #e9f0ff;
+}
+
+tbody td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar-brand {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    tbody td {
+        padding-left: 50%;
+        position: relative;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: 600;
+        text-align: left;
+        color: #555;
+    }
+
+    .btn-primary, .btn-danger {
+        padding: 8px 15px;
+        width: 48%;
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+/* Center the form container on the page */
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading style */
+h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Style the submit button */
+button.btn-primary {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Crispy form fields styling override */
+input, select, textarea {
+  border-radius: 8px;
+  border: 1.5px solid #ced4da;
+  padding: 10px 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Error message styling */
+.form-error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  font-weight: 600;
 }
