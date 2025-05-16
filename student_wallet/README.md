@@ -36,35 +36,35 @@ A simple Django web application to help students manage their budgets by trackin
 
 ## Project structure
 
-student_wallet/
-├── accounts/
-│   ├── migrations/
-│   ├── templates/
-│   │   └── accounts/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   └── ...
-├── budget/
-│   ├── migrations/
-│   ├── templates/
-│   │   └── budget/
-│   ├── templatetags/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   └── ...
-├── student_wallet/
-│   ├── settings.py
-│   ├── urls.py
-│   └── ...
-├── templates/
-├── static/
-├── manage.py
-├── requirements.txt
-└── README.md
+- student_wallet/
+- ├── accounts/
+- │   ├── migrations/
+- │   ├── templates/
+- │   │   └── accounts/
+- │   ├── admin.py
+- │   ├── apps.py
+- │   ├── forms.py
+- │   ├── models.py
+- │   ├── views.py
+- │   ├── urls.py
+- │   └── ...
+- ├── budget/
+- │   ├── migrations/
+- │   ├── templates/
+- │   │   └── budget/
+- │   ├── templatetags/
+- │   ├── admin.py
+- │   ├── apps.py
+- │   ├── models.py
+- │   ├── views.py
+- │   ├── urls.py
+- │   └── ...
+- ├── student_wallet/
+- │   ├── settings.py
+- │   ├── urls.py
+- │   └── ...
+- ├── templates/
+- ├── static/
+- ├── manage.py
+- ├── requirements.txt
+- └── README.md
