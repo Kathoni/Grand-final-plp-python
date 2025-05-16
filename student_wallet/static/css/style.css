@@ -197,7 +197,7 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus {
   border-color: #23860b;
   outline: none;
-  box-shadow: 0 0 6px rgba(48, 204, 43, 0.25);
+  box-shadow: 0 0 6px rgba(53, 236, 47, 0.25);
 }
 
 /* Error message styling */
